@@ -7,7 +7,7 @@ class Category{
         $this->categName = $categName;
         $this->setIcon();
     }
-    public function setIcon() {
+    private function setIcon() {
         if ($this->categName == 'cat') {
             $this->icon = '<i class="fa-solid fa-cat"></i>';
         }else{
