@@ -1,9 +1,17 @@
 <?php
-include __DIR__ . '/Product.php';
-class Category extends Product{
+
+class Category{
     public $categName;
-    public function __construct($name, $brand, $description, $sellPrice, $purchPrice, $stock, $supplier, $categName) {
-        parent::__construct($name, $brand, $description, $sellPrice, $purchPrice, $stock, $supplier);
+    public $icon;
+    public function __construct($categName) {
         $this->categName = $categName;
+        $this->setIcon();
+    }
+    public function setIcon() {
+        if ($this->categName == 'cat') {
+            $this->icon = '<i class="fa-solid fa-cat"></i>';
+        }else{
+            $this->icon = '<i class="fa-solid fa-dog"></i>';
+        }
     }
 }
