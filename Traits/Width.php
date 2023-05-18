@@ -12,3 +12,17 @@ trait Width{
         return $this->width;
     }
 }
+
+
+/* 
+esempio come usare il getwidth:
+
+try {
+    getWidth()
+} catch(Exception $e) {
+    echo 'Eccenzione: ' . $e->getMessage
+}
+
+
+
+*/
